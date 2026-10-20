@@ -1,0 +1,14 @@
+URL completa: http://127.0.0.1:5500/index.html
+Protocolo: http
+Host: 127.0.0.1
+Puerto: 5500
+Ruta: /index.html
+Método de petición: GET (lo habitual para cargar una página).
+Código de estado: 304 
+
+Si coloco una ruta que no existe, arroja un código de estado: 404, lo cual significa que
+NO encontró la página o el recurso que estoy buscando (ya que no existe).
+
+HTML: Define la estructura y el contenido del sitio. Ejemplo: usar un encabezado <h1>Rueda Libre</h1> y un párrafo de bienvenida.
+CSS: controla la presentación visual. Ejemplo: dar estilo al encabezado con colores y tipografía de la marca, y adaptar la página a celulares.
+JavaScript: agrega interactividad y comportamiento. Ejemplo: permitir que una persona seleccione una bicicleta y una fecha para consultar su disponibilidad.
