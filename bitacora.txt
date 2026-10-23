@@ -82,3 +82,8 @@ Comentarios | 301 caracteres | No permite escribir más de 300 caracteres. |
 Políticas de alquiler | Casilla sin marcar | No permite enviar mientras la casilla esté desmarcada. | Selecciona esta casilla de verificación si quieres continuar
 
 Aún no tengo muy claro lo de la herencia (Reto día 3 - parte 1) y me falta hacer también el (Reto día 2 - parte 4)
+Mapa de uso de color: usaré crema (#FAF6EF) para los fondos; gris asfalto (#5B6470) para el texto normal; 
+azul noche (#14213D) para títulos; verde ruta (#1E7A4F) para navegación, para el menú; 
+y naranja pedal (#F39A2B) para los botones y enlances con la etiqueta a.
+
+URL: https://alexxabr-19.github.io/rueda-libre/
