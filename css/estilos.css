@@ -7,7 +7,6 @@ a{
     color: rgb(7, 25, 224);
     font-weight: bold;
 }
-
 nav{
     display: flex;
     flex-direction: row;
@@ -22,3 +21,8 @@ main, footer{
     text-align: center;
 }
 
+main ul,
+main ol {
+    list-style-position: inside;
+    padding-left: 0;
+}

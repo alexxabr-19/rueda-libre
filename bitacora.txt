@@ -25,3 +25,34 @@ tarifas.html | Reservas | ./reservas.html
 reservas.html | Inicio | ../index.html
 reservas.html | Tarifas y rutas | ./tarifas.html
 reservas.html | Reservas | ./reservas.html
+
+Esquema de regiones antes de modificar el HTML:
+
+Inicio (index.html)
+header: nombre del negocio + navegación principal
+main:
+  section: quiénes somos
+  section: servicios
+    article: alquiler de bicicletas
+    article: rutas guiadas
+    article: accesorios y repuestos
+  section: beneficios
+  section: cómo alquilar
+  section: tarifas
+  section: encuéntranos
+footer: nombre del negocio + correo + año
+
+Tarifas y rutas (paginas/tarifas.html)
+header: nombre del negocio + navegación principal
+main:
+  section: tarifas de bicicletas + tabla
+  section: recorridos disponibles + tabla
+  aside: información adicional + qué llevar
+footer: nombre del negocio + correo + año
+
+Reservas (paginas/reservas.html)
+header: nombre del negocio + navegación principal
+main:
+  sección de reserva y contacto
+  aside: horario de atención
+footer: nombre del negocio + correo + año

@@ -43,3 +43,12 @@ nav{
 nav a{
     color: rgb(124, 32, 141);
 }
+
+ul{
+    text-align: center;
+}
+
+main ul{
+    list-style-position: inside;
+    padding-left: 0;
+}
