@@ -12,9 +12,9 @@
 <body>
     <header>
         <nav>
-                <p><a href="../index.html">Inicio</a></p>
-                <p><a href="./tarifas.html">Tarifas y rutas</a></p>
-                <p><a href="./reservas.html">Reservas</a></p>
+            <p><a href="../index.html">Inicio</a></p>
+            <p><a href="./tarifas.html">Tarifas y rutas</a></p>
+            <p><a href="./reservas.html">Reservas</a></p>
         </nav>
     </header>
 
@@ -24,21 +24,89 @@
             <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>.
         </p>
 
-            <h2>Horario de atención</h2>
-            <ul>
-                <li>
-                    <p><strong>Lunes a viernes</strong></p>
-                    <p>9:00 a. m. a 6:00 p. m.</p>
-                </li>
-                <li>
-                    <p><strong>Sábados</strong></p>
-                    <p>9:00 a. m. a 1:00 p. m.</p>
-                </li>
-                <li>
-                    <p><strong>Domingos y festivos</strong></p>
-                    <p>Cerrado</p>
-                </li>
-            </ul>
+        <h2>Horario de atención</h2>
+        <ul>
+            <li>
+                <p><strong>Lunes a viernes</strong></p>
+                <p>9:00 a. m. a 6:00 p. m.</p>
+            </li>
+            <li>
+                <p><strong>Sábados</strong></p>
+                <p>9:00 a. m. a 1:00 p. m.</p>
+            </li>
+            <li>
+                <p><strong>Domingos y festivos</strong></p>
+                <p>Cerrado</p>
+            </li>
+        </ul>
+
+        <section class="formulario">
+            <h2>Formulario de reserva</h2>
+
+            <form method="post">
+                <fieldset>
+                    <legend>Tus datos</legend>
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="documento">Número de documento:</label>
+                    <input type="text" id="documento" name="documento" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu alquiler</legend>
+
+                    <label for="fecha">Fecha del alquiler:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="bicicleta">Tipo de bicicleta:</label>
+                    <select id="bicicleta" name="bicicleta" required>
+                        <option value="">Elige una opción</option>
+                        <option value="urbana">Urbana</option>
+                        <option value="montana">Montaña</option>
+                        <option value="electrica">Eléctrica</option>
+                    </select>
+
+                    <label for="plan">Plan:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">Elige una opción</option>
+                        <option value="1-hora">1 hora</option>
+                        <option value="medio-dia">Medio día</option>
+                        <option value="dia-completo">Día completo</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad de bicicletas:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+                    <label for="recorrido">Recorrido guiado:</label>
+                    <select id="recorrido" name="recorrido">
+                        <option value="ninguno">Ninguno</option>
+                        <option value="rio-parques">Río y Parques</option>
+                        <option value="sabores-barrio">Sabores de barrio</option>
+                        <option value="reto-palmas">Reto Las Palmas</option>
+                    </select>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmación</legend>
+
+                    <input type="checkbox" id="politicas" name="acepta-politicas" required>
+                    <label for="politicas">Acepto las políticas de alquiler.</label>
+                </fieldset>
+
+                <button type="submit">Enviar reserva</button>
+            </form>
+        </section>
     </main>
 
     <footer>

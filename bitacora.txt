@@ -13,6 +13,7 @@ HTML: Define la estructura y el contenido del sitio. Ejemplo: usar un encabezado
 CSS: controla la presentación visual. Ejemplo: dar estilo al encabezado con colores y tipografía de la marca, y adaptar la página a celulares.
 JavaScript: agrega interactividad y comportamiento. Ejemplo: permitir que una persona seleccione una bicicleta y una fecha para consultar su disponibilidad.
 
+
 Rutas del menú:
 
 Archivo de origen | Destino | Ruta escrita
@@ -56,3 +57,8 @@ main:
   sección de reserva y contacto
   aside: horario de atención
 footer: nombre del negocio + correo + año
+
+Decisiones del formulario de reservas:
+- Usé una lista desplegable para elegir la bicicleta, así solo se puede escoger entre los tipos disponibles.
+- Usé un campo de fecha para seleccionar el día del alquiler sin tener que escribirlo a mano.
+- Usé una casilla para confirmar que se aceptan las políticas antes de enviar la reserva.
