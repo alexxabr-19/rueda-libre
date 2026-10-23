@@ -86,14 +86,57 @@ a {
     font-weight: bold;
 }
 
-nav {
+#menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
+#menu a {
+    color: var(--gris-asfalto);
+}
+
+.activo {
     color: var(--verde-ruta);
+    font-weight: 600;
+}
+
+#menu a.activo {
+    color: var(--verde-ruta);
+    font-weight: 600;
+}
+
+#menu a:hover {
+    color: var(--azul-noche);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+#menu a:focus-visible,
+.boton-reserva:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 3px;
+}
+
+.boton-reserva {
+    display: inline-block;
+    padding: var(--espacio-pequeno) var(--espacio-medio);
+    border-radius: 0.25rem;
+    background-color: var(--verde-ruta);
+    color: white;
+    font-weight: 600;
+}
+
+.boton-reserva:hover {
+    background-color: var(--azul-noche);
+    color: white;
 }
 
 ul {

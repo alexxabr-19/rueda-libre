@@ -82,3 +82,12 @@ Comentarios | 301 caracteres | No permite escribir más de 300 caracteres. |
 Políticas de alquiler | Casilla sin marcar | No permite enviar mientras la casilla esté desmarcada. | Selecciona esta casilla de verificación si quieres continuar
 
 Aún no tengo muy claro lo de la herencia (Reto día 3 - parte 1) y me falta hacer también el (Reto día 2 - parte 4)
+
+Especificidad del menú:
+- #menu a tiene especificidad 1-0-1 (un id y un elemento).
+- .activo tiene especificidad 0-1-0 (una clase).
+- Por eso #menu a gana a .activo y el color de la clase no se veía.
+- #menu a.activo tiene especificidad 1-1-1 y permite aplicar el estilo al enlace activo sin usar !important.
+
+Comprobación de teclado pendiente:
+- Recorrer inicio, tarifas y reservas con Tab y confirmar que el foco se vea en enlaces, botones y campos.
