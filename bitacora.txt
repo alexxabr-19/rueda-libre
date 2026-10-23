@@ -62,3 +62,22 @@ Decisiones del formulario de reservas:
 - Usé una lista desplegable para elegir la bicicleta, así solo se puede escoger entre los tipos disponibles.
 - Usé un campo de fecha para seleccionar el día del alquiler sin tener que escribirlo a mano.
 - Usé una casilla para confirmar que se aceptan las políticas antes de enviar la reserva.
+
+Pruebas de validación del formulario
+
+
+Campo | Dato de prueba | Resultado esperado | Resultado obtenido
+Nombre completo | Ana | Acepta el nombre porque tiene 3 caracteres. |
+Nombre completo | Al | No permite enviar porque tiene menos de 3 caracteres. | Aumenta la longitud del texto a 3 caracteres como mínimo (actualmente, el texto tiene 2 caracteres)
+Documento | 12345 | No permite enviar porque tiene menos de 6 dígitos. |
+Documento | 123456 | Acepta el documento porque tiene 6 dígitos. | Aumenta la longitud del texto a 6 caracteres como mínimo(actualmente, el texto tiene 5 caracteres)
+Correo | correo | No permite enviar porque no tiene formato de correo válido. | Incluye un signo "@" en la dirección de correo electrónico. La dirección "correo" no incluye el signo "@".
+Celular | 2123456789 | No permite enviar porque no empieza por 3. | Utiliza un formato que coincida con el solicitado 
+Debe iniciar su número por 3 y debe contener 10 dígitos
+Celular | 3123456789 | Acepta el celular porque empieza por 3 y tiene 10 dígitos. |
+Fecha del alquiler | 2026-10-31 | No permite enviar porque es anterior al 1 de noviembre de 2026. | El valor debe ser igual o posterior a 01/11/2026
+Fecha del alquiler | 2026-11-01 | Acepta la fecha porque está dentro del período permitido. |
+Cantidad de bicicletas | 7 | No permite enviar porque supera el máximo de 6. | El valor debe ser inferior o igual a 6
+Comentarios | 301 caracteres | No permite escribir más de 300 caracteres. |
+Políticas de alquiler | Casilla sin marcar | No permite enviar mientras la casilla esté desmarcada. | Selecciona esta casilla de verificación si quieres continuar
+
