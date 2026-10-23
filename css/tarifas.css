@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(243, 239, 239);
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 2px solid black;
+}
+
+h2, h3, p, h1{
+    text-align: center;
+}
+
+img{
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.nav-link {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(7, 25, 224);
+    font-weight: bold;
+}
+
+
