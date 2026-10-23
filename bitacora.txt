@@ -81,3 +81,4 @@ Cantidad de bicicletas | 7 | No permite enviar porque supera el máximo de 6. | 
 Comentarios | 301 caracteres | No permite escribir más de 300 caracteres. |
 Políticas de alquiler | Casilla sin marcar | No permite enviar mientras la casilla esté desmarcada. | Selecciona esta casilla de verificación si quieres continuar
 
+Aún no tengo muy claro lo de la herencia (Reto día 3 - parte 1) y me falta hacer también el (Reto día 2 - parte 4)

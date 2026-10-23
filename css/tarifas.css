@@ -1,6 +1,55 @@
-body{
-    background-color: rgb(243, 239, 239);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+
+    --espacio-pequeno: 0.5rem;
+    --espacio-medio: 1rem;
+    --espacio-grande: 2rem;
 }
+
+
+body {
+    background-color: var(--crema);
+    color: var(--gris-asfalto);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--azul-noche);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
 
 table {
     width: 80%;
@@ -15,11 +64,14 @@ td {
     border: 2px solid black;
 }
 
-h2, h3, p, h1{
+h2,
+h3,
+p,
+h1 {
     text-align: center;
 }
 
-img{
+img {
     display: block;
     width: 30%;
     height: auto;
@@ -28,27 +80,27 @@ img{
 }
 
 
-a{
+a {
     text-decoration: none;
-    color: rgb(7, 25, 224);
+    color: var(--naranja-pedal);
     font-weight: bold;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-nav a{
-    color: rgb(124, 32, 141);
+nav a {
+    color: var(--verde-ruta);
 }
 
-ul{
+ul {
     text-align: center;
 }
 
-main ul{
+main ul {
     list-style-position: inside;
     padding-left: 0;
 }
