@@ -27,10 +27,6 @@ img{
     border-radius: 40px;
 }
 
-.nav-link {
-    text-align: left;
-    margin-bottom: 20px;
-}
 
 a{
     text-decoration: none;
@@ -38,4 +34,12 @@ a{
     font-weight: bold;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+nav a{
+    color: rgb(124, 32, 141);
+}

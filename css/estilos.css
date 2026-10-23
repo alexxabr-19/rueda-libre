@@ -7,3 +7,18 @@ a{
     color: rgb(7, 25, 224);
     font-weight: bold;
 }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a{
+    color: rgb(124, 32, 141);
+}
+
+main, footer{
+    text-align: center;
+}
+
