@@ -60,7 +60,7 @@ a {
     font-weight: bold;
 }
 
-nav {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -89,4 +89,22 @@ main ol {
 fieldset {
     border: 2px solid var(--naranja-pedal);
     margin-bottom: var(--espacio-medio);
+}
+
+
+#menu a.activo {
+    color: var(--azul-noche);
+    text-decoration: underline;
+}
+
+#menu a:hover,
+#menu a:focus-visible {
+    color: var(--crema);
+    background-color: var(--verde-ruta);
+    text-decoration: underline;
+}
+
+#menu a:focus-visible {
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 3px;
 }

@@ -8,6 +8,9 @@
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
 
+    --fuente-texto: "Montserrat", sans-serif;
+    --fuente-titulos: "Open Sans", sans-serif;
+
     --espacio-pequeno: 0.5rem;
     --espacio-medio: 1rem;
     --espacio-grande: 2rem;
@@ -17,7 +20,7 @@
 body {
     background-color: var(--crema);
     color: var(--gris-asfalto);
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-texto);
     font-size: 1rem;
 }
 
@@ -28,7 +31,7 @@ h4,
 h5,
 h6 {
     color: var(--azul-noche);
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--fuente-titulos);
     font-weight: 700;
 }
 
@@ -45,7 +48,7 @@ h3 {
 }
 
 p {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-texto);
     font-weight: 400;
     line-height: 1.6;
 }
@@ -86,7 +89,7 @@ a {
     font-weight: bold;
 }
 
-nav {
+nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
