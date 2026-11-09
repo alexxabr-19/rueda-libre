@@ -174,3 +174,29 @@ footer {
     margin: 0 auto;
     padding: var(--espaciado-mediano);
 }*/
+
+.whatsapp {
+    position: fixed;
+    bottom: var(--espaciado-mediano);
+    right: var(--espaciado-mediano);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.whatsapp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+
+footer {
+    padding-bottom: 5rem;
+}

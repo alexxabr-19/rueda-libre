@@ -153,3 +153,27 @@ Solución: cambié .activo por #menu a.activo = (1, 1, 1), que le gana a (1, 0, 
 Medición del ancho de una tarjeta:
 - Con box-sizing: border-box: width = 750.4 px
 - Sin border-box (content-box): width = 716.8 px
+
+
+CIERRE SEMANA 1
+
+Lo que construí en cada MiniReto:
+1. Repositorio, estructura de carpetas, index.html base y bitácora.
+2. Página de inicio con listas, imágenes y enlaces.
+3. Página de tarifas con tablas y rutas relativas.
+4. Sitio navegable con menú y pie comunes, y página de reservas.
+5. Estructura semántica (header, nav, main, footer) en las tres páginas.
+6. Formulario de reservas con fieldsets, controles y labels.
+7. Validación nativa del formulario y uso con teclado.
+8. Auditoría de accesibilidad, mapa de color y publicación en GitHub Pages.
+9. Hoja de estilos externa con variables de color, fuentes y espaciado.
+10. Estados :hover y :focus, enlace activo y botones.
+11. Box model: tarjetas, tablas, formulario y contenedor centrado.
+12. Etiqueta "Nuevo", enlace fijo de WhatsApp, limpieza del CSS y publicación v1.0.
+
+Lo que mejoraría:
+- El formulario de reservas todavía no envía los datos a ningún lado; solo valida los campos.
+- Centraría el título (h1) y el pie de página, que quedaron alineados a la izquierda.
+- Adaptaría mejor el diseño a celulares, porque probé sobre todo en pantalla de computador.
+- Para próximos ejercicios, probaría los cambios en las tres páginas apenas los haga, en lugar de dejarlo para el final.
+Fue muy chévere hacer estos ejercicios : D
