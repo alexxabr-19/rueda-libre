@@ -1,5 +1,7 @@
-/* Variables para aplicar estilos a mi sitio */
+/* SEMANA 1 */
 
+
+/* Variables para aplicar estilos a mi sitio */
 :root {
     /* Colores */
     --verde-ruta: #1E7A4F;
@@ -157,16 +159,6 @@ input[type="checkbox"] {
     margin-bottom: 0;
 }
 
-#menu {
-    list-style: none;
-    padding: 0;
-}
-
-#menu li {
-    display: inline-block;
-    margin-right: var(--espaciado-mediano);
-}
-
 /*header,
 main,
 footer {
@@ -197,6 +189,28 @@ footer {
     background-color: #fff;
 }
 
+/* SEMANA 2 */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--espaciado-mediano);
+}
+
+#menu {
+    display: flex;
+    gap: var(--espaciado-mediano);
+    list-style: none;
+    padding: 0;
+}
+
 footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--espaciado-grande);
     padding-bottom: 5rem;
 }

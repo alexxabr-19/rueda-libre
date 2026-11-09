@@ -177,3 +177,12 @@ Lo que mejoraría:
 - Adaptaría mejor el diseño a celulares, porque probé sobre todo en pantalla de computador.
 - Para próximos ejercicios, probaría los cambios en las tres páginas apenas los haga, en lugar de dejarlo para el final.
 Fue muy chévere hacer estos ejercicios : D
+
+
+SEMANA 2 - DÍA 1
+
+¿Qué pasa al estrechar la ventana?:
+- Encabezado: en pantalla ancha, el nombre queda a la izquierda y el menú a la derecha,
+  centrados verticalmente. Al estrechar, el menú baja debajo del nombre.
+- Pie: en pantalla ancha, los tres bloques (marca, contacto y horario) van en fila.
+  Al estrechar, el bloque que no cabe baja a otra línea hasta quedar en columna.
