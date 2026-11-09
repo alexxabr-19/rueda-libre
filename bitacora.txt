@@ -135,3 +135,17 @@ Herencia comprobada en DevTools (Styles y Computed) para la etiqueta <p>:
 - Propiedad que NO se hereda: background-color. También aparece en el body,
   pero se ve apagada (en gris) porque no pasa al párrafo. El fondo crema se
   ve porque es el del body, no porque el párrafo lo haya recibido.
+
+
+Conflicto del enlace:
+Agregué las reglas mencionadas, pero el enlace con la clase activo no se veía verde.
+En DevTools (Styles) la declaración color de .activo salía tachada.
+
+Especificidad de cada selector:
+- #menu a  = (1, 0, 1)  -> 1 id, 0 clases, 1 etiqueta
+- .activo  = (0, 1, 0)  -> 0 id, 1 clase, 0 etiquetas
+
+Causa: un id pesa más que una clase, por eso #menu a gana aunque .activo esté
+escrita después.
+
+Solución: cambié .activo por #menu a.activo = (1, 1, 1), que le gana a (1, 0, 1).
