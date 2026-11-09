@@ -123,3 +123,15 @@ Mapa de uso de color
 - Naranja Pedal (#F39A2B): destacados y botones secundarios con texto Azul Noche.
 
 Link de la page: https://alexxabr-19.github.io/rueda-libre/
+
+
+
+SEMANA 1 - DÍA 3
+
+Herencia comprobada en DevTools (Styles y Computed) para la etiqueta <p>:
+
+- Propiedad que se hereda: color. El párrafo usa el gris asfalto que puse
+  en el body.
+- Propiedad que NO se hereda: background-color. También aparece en el body,
+  pero se ve apagada (en gris) porque no pasa al párrafo. El fondo crema se
+  ve porque es el del body, no porque el párrafo lo haya recibido.

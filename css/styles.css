@@ -1,0 +1,30 @@
+/* Variables para aplicar estilos a mi sitio */
+
+:root {
+    /* Colores */
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+
+    /* Tipografías */
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-textos: 'Open Sans', sans-serif;
+
+    /* Espaciados */
+    --espaciado-pequeno: 0.5rem;
+    --espaciado-mediano: 1rem;
+    --espaciado-grande: 2rem;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    color: var(--gris-asfalto);
+    background-color: var(--crema);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    color: var(--azul-noche);
+}
