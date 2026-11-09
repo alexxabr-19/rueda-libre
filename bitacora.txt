@@ -186,3 +186,9 @@ SEMANA 2 - DÍA 1
   centrados verticalmente. Al estrechar, el menú baja debajo del nombre.
 - Pie: en pantalla ancha, los tres bloques (marca, contacto y horario) van en fila.
   Al estrechar, el bloque que no cabe baja a otra línea hasta quedar en columna.
+
+
+Columnas de la flota en el modo dispositivo de DevTools:
+- 1280 px: 3 columnas
+- 900 px: 3 columnas
+- 500 px: 1 columna
