@@ -85,4 +85,41 @@ Fecha del alquiler | 2026-10-31 | No permite enviar porque es anterior al 1 de n
 Fecha del alquiler | 2026-11-01 | Acepta la fecha porque está dentro del período permitido. |
 Cantidad de bicicletas | 7 | No permite enviar porque supera el máximo de 6. | El valor debe ser inferior o igual a 6
 Comentarios | 301 caracteres | No permite escribir más de 300 caracteres. |
-Políticas de alquiler | Casilla sin marcar | No permite enviar mientras la casilla esté desmarcada. | Selecciona esta casilla de verificación si quieres continuar
+Políticas de alquiler | Casilla sin marcar | No permite enviar mientras la casilla esté desmarcada. | Selecciona esta casilla de verificación si quieres continuar.
+
+
+Auditoría de las páginas
+
+1. Idioma del documento:
+Hallazgo: La página principal tenía el atributo lang="en".
+Corrección: Se cambió por lang="es" para indicar que el contenido está en español.
+
+2. Jerarquía de encabezados:
+Hallazgo: En la página principal había un encabezado H3 repetido sobre los recorridos guiados.
+Corrección: Se eliminó el encabezado repetido por el que correspondía, para así evitar la duplicidad de la información.
+
+
+Verificación del contraste de colores
+
+| Combinación | Contraste | Clasificación |
+
+| Blanco / Verde Ruta | 5.31:1 | Apta para texto normal |
+| Blanco / Naranja Pedal | 2.22:1 | No apta |
+| Azul Noche / Naranja Pedal | 7.20:1 | Apta para texto normal |
+| Azul Noche / Crema | 14.83:1 | Apta para texto normal |
+| Gris Asfalto / Crema | 5.57:1 | Apta para texto normal |
+| Verde Ruta / Crema | 4.93:1 | Apta para texto normal |
+| Naranja Pedal / Crema | 2.06:1 | No apta |
+| Blanco / Azul Noche | 15.97:1 | Apta para texto normal |
+Herramienta de comprobación: WebAIM Contrast Checker.
+
+
+Mapa de uso de color
+
+- Crema (#FAF6EF): fondo general.
+- Azul Noche (#14213D): títulos y encabezados.
+- Gris Asfalto (#5B6470): textos secundarios y párrafos.
+- Verde Ruta (#1E7A4F): botones y enlaces con texto blanco.
+- Naranja Pedal (#F39A2B): destacados y botones secundarios con texto Azul Noche.
+
+Link de la page: https://alexxabr-19.github.io/rueda-libre/
