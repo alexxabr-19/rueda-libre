@@ -149,3 +149,7 @@ Causa: un id pesa más que una clase, por eso #menu a gana aunque .activo esté
 escrita después.
 
 Solución: cambié .activo por #menu a.activo = (1, 1, 1), que le gana a (1, 0, 1).
+
+Medición del ancho de una tarjeta:
+- Con box-sizing: border-box: width = 750.4 px
+- Sin border-box (content-box): width = 716.8 px
