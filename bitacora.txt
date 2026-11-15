@@ -192,3 +192,35 @@ Columnas de la flota en el modo dispositivo de DevTools:
 - 1280 px: 3 columnas
 - 900 px: 3 columnas
 - 500 px: 1 columna
+
+
+¿Flex o Grid?
+
+¿Cómo lo hice?: Yo uso Flexbox cuando acomodo elementos en UNA dimensión (una fila o una columna). Y
+Uso Grid cuando necesito una cuadrícula de DOS dimensiones (filas y columnas) con
+proporciones que yo puedo definir.
+
+1. Portada (inicio): GRID.
+   Usé grid-template-columns: 1fr 1fr para dividir el espacio en dos columnas iguales
+   (texto y foto). Con align-items: center el texto queda centrado verticalmente.
+   Elegí Grid porque quiero definir yo las columnas, sin importar cuánto contenido haya.
+
+2. Galería "Nuestras rutas": GRID.
+   Usé repeat(3, 1fr) y gap para tener tres tarjetas del mismo ancho. Elegí Grid porque
+   es una cuadrícula: si agrego más rutas, se acomodan en filas nuevas.
+
+3. Reservas: GRID.
+   Usé grid-template-columns: 2fr 1fr. El formulario ocupa 2 partes y el aside 1 parte,
+   o sea, proporción 2:1. Elegí Grid porque la proporción la defino yo, no el contenido.
+
+4. Formulario: FLEXBOX.
+   Son solo dos campos en una fila. Usé display: flex, justify-content: space-between,
+   align-items: flex-start y gap. Elegí Flexbox porque es una sola dimensión.
+
+5. Encabezado: FLEXBOX.
+   Es una sola fila: el nombre del negocio y el menú. Usé justify-content y align-items
+   para repartirlos y centrarlos verticalmente.
+
+6. Pie de página: FLEXBOX.
+   Es una sola fila con tres bloques (marca, contacto y horario). Usé justify-content
+   y gap para separarlos. Es una dimensión, por eso usé Flexbox.

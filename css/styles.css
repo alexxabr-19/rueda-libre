@@ -235,3 +235,43 @@ footer {
     width: 280px;
     height: 200px;
 }
+
+.portada2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espaciado-grande);
+    align-items: center;
+}
+
+.portada2 img{
+    width: 100%;
+    height: auto;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espaciado-mediano);
+}
+
+.galeria img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.reservas-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espaciado-grande);
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--espaciado-mediano);
+
+}
+
+.campo{
+    width: 100%;
+}
