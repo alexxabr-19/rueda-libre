@@ -214,8 +214,8 @@ proporciones que yo puedo definir.
    o sea, proporción 2:1. Elegí Grid porque la proporción la defino yo, no el contenido.
 
 4. Formulario: FLEXBOX.
-   Son solo dos campos en una fila. Usé display: flex, justify-content: space-between,
-   align-items: flex-start y gap. Elegí Flexbox porque es una sola dimensión.
+   Son solo dos campos en una fila. Usé display: flex, justify-content: space-between y gap. 
+   Elegí Flexbox porque es una sola dimensión.
 
 5. Encabezado: FLEXBOX.
    Es una sola fila: el nombre del negocio y el menú. Usé justify-content y align-items
@@ -224,3 +224,20 @@ proporciones que yo puedo definir.
 6. Pie de página: FLEXBOX.
    Es una sola fila con tres bloques (marca, contacto y horario). Usé justify-content
    y gap para separarlos. Es una dimensión, por eso usé Flexbox.
+
+
+Problemas
+
+1. Problema: en reservas.html a 360 px, documento y celular quedaban lado a lado, apretados,
+   y sus campos desalineados.
+   Solución: dejé en la regla base de .fila flex-direction: column y .campo con
+   width: 100%, y moví la fila (row) a la media query de 768 px.
+
+2. Problema: en tarifas.html a 768 px el menú se partía en dos líneas porque el título es largo.
+   Solución: en la media query de 768 px puse #menu con flex-wrap: nowrap.
+
+3. Problema: en reservas.html a 768 px el horario de atención quedaba en una lista alta
+   y angosta debajo del formulario, y se desperdiciaba el espacio de al lado.
+   Solución: en la media query de 768 px puse la lista con display: flex y
+   justify-content: space-between para que quede en fila, y en la de 1200 px le puse
+   flex-direction: column porque ahí el horario queda en la columna angosta.

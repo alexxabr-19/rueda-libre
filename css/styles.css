@@ -131,7 +131,8 @@ table {
 
 th,
 td {
-    padding: var(--espaciado-pequeno);
+    padding: 0.25rem;
+    font-size: 0.8rem;
     border: 1px solid var(--gris-asfalto);
 }
 
@@ -191,16 +192,18 @@ footer {
 
 /* SEMANA 2 */
 
-header{
+header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     gap: var(--espaciado-mediano);
+    text-align: center;
 }
 
 #menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--espaciado-mediano);
     list-style: none;
     padding: 0;
@@ -208,9 +211,9 @@ header{
 
 footer {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: var(--espaciado-grande);
     padding-bottom: 5rem;
 }
@@ -218,10 +221,10 @@ footer {
 .cuadricula {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-        gap: var(--espaciado-pequeno);
+    gap: var(--espaciado-pequeno);
 }
 
-.cuadricula article{
+.cuadricula article {
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -231,26 +234,24 @@ footer {
     margin-top: auto;
 }
 
-.cuadricula article img{
+.cuadricula article img {
     width: 280px;
     height: 200px;
 }
 
-.portada2{
+.portada2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: var(--espaciado-grande);
     align-items: center;
 }
 
-.portada2 img{
+.portada2 img {
     width: 100%;
     height: auto;
 }
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--espaciado-mediano);
 }
 
@@ -261,17 +262,85 @@ footer {
 
 .reservas-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: var(--espaciado-grande);
 }
 
 .fila {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: var(--espaciado-mediano);
 
 }
 
-.campo{
+.campo {
     width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  TABLET: desde 768px */
+@media (min-width: 768px) {
+
+    #menu {
+        flex-wrap: nowrap;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .portada2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .fila {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .campo {
+        width: 48%;
+    }
+
+    th,
+    td {
+        padding: var(--espaciado-pequeno);
+        font-size: 1rem;
+    }
+
+    .reservas-layout aside ul {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--espaciado-mediano);
+        list-style: none;
+        padding: 0;
+    }
+}
+
+/* ESCRITORIO: desde 1200px */
+@media (min-width: 1200px) {
+    .reservas-layout {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .reservas-layout aside ul {
+        flex-direction: column;
+    }
 }
