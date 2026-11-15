@@ -241,3 +241,21 @@ Problemas
    Solución: en la media query de 768 px puse la lista con display: flex y
    justify-content: space-between para que quede en fila, y en la de 1200 px le puse
    flex-direction: column porque ahí el horario queda en la columna angosta.
+
+
+SEMANA 2 - DÍA 2
+
+Tiempo invertido: 5:51 minutos (desde que empecé a reconstruir la distribución hasta que
+se vieron 1, 2, 3 y 4 columnas). 
+
+Mi versión con CSS propio vs. Bootstrap:
+- CSS propio: 19 líneas de CSS para distribuir la flota. (desde la línea 221 hasta la 240).
+- Bootstrap: 7 clases usadas en la distribución (container, row, g-3, col-12,
+  col-sm-6, col-lg-4, col-xl-3) y 1 clase más para las imágenes (img-fluid).
+
+Qué me dio Bootstrap sin esfuerzo:
+- Hacer el responsive utilizando unas pocas palabras.
+
+Qué control perdí:
+- No sé cómo manejar bien el tema de las imágenes, ya que las fotos quedaron de alturas distintas. 
+- Los botones "Reservar" perdieron mi estilo (verde, bordes redondeados), porque mi CSS no se carga en esta página.
