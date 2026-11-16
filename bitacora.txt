@@ -319,3 +319,44 @@ excelente herramienta.
 
 
 SEMANA 2 - DÍA 3
+
+
+# CIERRE SEMANA 2
+
+**Lo que construí en cada MiniReto:**
+
+1. Integré Bootstrap 5.3 al sitio web Rueda Libre mediante CDN.
+2. Adapté la navegación, las tarjetas y las secciones para que fueran responsive.
+3. Organicé las bicicletas y rutas utilizando el sistema de grillas de Bootstrap.
+4. Agregué un carrusel de promociones con controles para avanzar y retroceder.
+5. Mejoré el formulario de reservas utilizando las clases de Bootstrap.
+6. Implementé la validación visual del formulario con mensajes de error para cada campo obligatorio.
+7. Agregué una alerta informativa sobre la presentación del documento de identidad y un modal con las políticas de alquiler.
+8. Personalicé Bootstrap con los colores Verde Ruta, Naranja Pedal y Azul Noche, utilizando variables CSS.
+9. Modifiqué los botones principales y sus estados hover y active, y creé clases propias para la portada, los títulos y el pie de página.
+10. Incorporé Bootstrap Icons en el menú, los datos de contacto, los beneficios y el enlace de WhatsApp.
+11. Revisé errores comunes de Bootstrap, la accesibilidad, el contraste de colores y el funcionamiento en celular, tablet y computador.
+12. Publiqué Rueda Libre v2.0 en GitHub Pages y guardé las capturas del antes y después de la personalización.
+
+**Lo que mejoraría:**
+
+- Corregiría la alineación del menú de navegación y del pie de página, porque en dispositivos celulares quedaron un poco desplazados hacia la izquierda.
+- Mejoraría algunos detalles del diseño responsive para que la página se vea igual de organizada en cualquier tamaño de pantalla.
+- Haría que el formulario de reservas realmente enviara y almacenara la información, porque por ahora solamente valida los datos.
+- Seguiría practicando Bootstrap y CSS para personalizar los componentes de manera más sencilla y evitar conflictos entre estilos.
+- Para próximos ejercicios, revisaría con más frecuencia cómo se ven los cambios en celular, tablet y computador.
+
+Me gustó mucho trabajar con Bootstrap porque aprendí a organizar mejor las páginas y a darles un diseño más profesional sin 
+tener que hacer todo desde cero. Al principio algunas cosas fueron un poco complicadas, especialmente los estilos y 
+la adaptación a celulares, pero poco a poco fui entendiendo cómo funcionan. Fue muy chévere ver cómo Rueda Libre pasó de tener 
+un diseño básico a una versión más completa y personalizada. :D
+
+
+SEMANA 3 - DÍA 1
+
+Tailwind
+
+Creé el prototipo de Rueda Nocturna utilizando Tailwind CSS, agregando colores, tamaños y espaciados.
+En Bootstrap hice el botón con `btn btn-primary`, mientras que en Tailwind utilicé clases como `bg-orange-400`, `text-black` y `p-3`.
+La diferencia es que Bootstrap tiene componentes prediseñados y Tailwind permite crear los estilos combinando clases pequeñas.
+Fue interesante conocer otra forma de diseñar páginas web. :D
