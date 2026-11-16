@@ -375,3 +375,14 @@ También agregué efectos hover y focus para mejorar la interacción con el mous
 Organicé la landing de Rueda Nocturna con encabezado, sección principal, rutas, pasos, inscripción y pie de página.
 Utilicé 'flex' para el encabezado y el pie de página porque permite organizar elementos en una fila. Usé 'grid' para las rutas y los pasos porque facilita distribuirlos en columnas.
 También reutilicé los botones y tarjetas de los ejercicios anteriores.
+
+
+Al revisar la landing a 360 px, encontré que las rutas y los pasos tenían demasiadas columnas para un celular.
+Utilicé 'sm:', 'md:' y 'lg:' para adaptar el diseño a diferentes pantallas. También ajusté el encabezado, los tamaños de texto y los espacios.
+
+| Pantalla | Resultado esperado |
+| 360 px | Una columna y menú simplificado |
+| 768 px | Dos columnas y encabezado horizontal |
+| 1024 px | Tres rutas y cuatro pasos por fila |
+| 1280 px | Diseño completo de escritorio |
+
