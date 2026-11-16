@@ -360,3 +360,9 @@ Creé el prototipo de Rueda Nocturna utilizando Tailwind CSS, agregando colores,
 En Bootstrap hice el botón con `btn btn-primary`, mientras que en Tailwind utilicé clases como `bg-orange-400`, `text-black` y `p-3`.
 La diferencia es que Bootstrap tiene componentes prediseñados y Tailwind permite crear los estilos combinando clases pequeñas.
 Fue interesante conocer otra forma de diseñar páginas web. :D
+
+
+
+Instalé Tailwind con npm y configuré la CLI para generar `output.css`. Creé tres botones con efectos "hover" y "focus".
+Al revisar el CSS, encontré "bg-orange-400", pero no "bg-pink-500", porque Tailwind solo genera las clases que utilizamos.
+También comprobé que los botones funcionan con el mouse y el teclado. :D
