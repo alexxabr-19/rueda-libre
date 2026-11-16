@@ -259,3 +259,15 @@ Qué me dio Bootstrap sin esfuerzo:
 Qué control perdí:
 - No sé cómo manejar bien el tema de las imágenes, ya que las fotos quedaron de alturas distintas. 
 - Los botones "Reservar" perdieron mi estilo (verde, bordes redondeados), porque mi CSS no se carga en esta página.
+
+Clases que encontré en la documentación:
+
+1. h-100: hace que un elemento mida el 100% de la altura de su contenedor. La usé para que
+   las cuatro tarjetas de beneficios queden del mismo alto.
+2. d-none: oculta un elemento (display: none). La usé en la imagen decorativa para que no
+   se vea en celular.
+3. d-block: muestra un elemento como bloque. Con el prefijo md queda d-md-block, que lo muestra
+   desde 768 px. Lo usé junto con d-none en la imagen decorativa.
+4. fs-4: cambia el tamaño de la letra (fs-1 es el más grande y fs-6 el más pequeño). La usé en
+   el texto "¿Listo para rodar?".
+5. fw-bold: pone el texto en negrita. La usé en títulos, datos destacados y el enlace.
