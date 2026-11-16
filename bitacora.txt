@@ -316,3 +316,6 @@ Definitivamente, Bootstrap es una herramienta que proporciona una gran ayuda en 
 al implementar sus clases. LLevar el css a Bootstrap sí me pareció algo tedioso. Sin embargo, empezar desde 0 con Bootstrap debe ser mucho más cómodo. Eso sí, Bootstrap tiene
 falencias como: no tener muchos colores disponibles o que hay que estar pegado a la documentación para tener en cuenta la infinidad de clases que hay. Pero a decir verdad, es una 
 excelente herramienta.
+
+
+SEMANA 2 - DÍA 3
