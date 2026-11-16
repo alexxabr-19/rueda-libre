@@ -218,47 +218,7 @@ footer {
     padding-bottom: 5rem;
 }
 
-.cuadricula {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: var(--espaciado-pequeno);
-}
-
-.cuadricula article {
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.cuadricula .boton-reserva {
-    margin-top: auto;
-}
-
-.cuadricula article img {
-    width: 280px;
-    height: 200px;
-}
-
-.portada2 {
-    display: grid;
-    gap: var(--espaciado-grande);
-    align-items: center;
-}
-
-.portada2 img {
-    width: 100%;
-    height: auto;
-}
-
-.galeria {
-    display: grid;
-    gap: var(--espaciado-mediano);
-}
-
-.galeria img {
-    height: 200px;
-    object-fit: cover;
-}
+/*Todavía lo usa reservas*/
 
 .reservas-layout {
     display: grid;
@@ -281,6 +241,10 @@ img {
     height: auto;
 }
 
+a {
+    color: var(--verde-ruta);
+}
+
 /*  TABLET: desde 768px */
 @media (min-width: 768px) {
 
@@ -299,14 +263,6 @@ img {
         justify-content: space-around;
         align-items: flex-start;
         text-align: left;
-    }
-
-    .portada2 {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .galeria {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .fila {

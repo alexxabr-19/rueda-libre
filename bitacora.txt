@@ -271,3 +271,23 @@ Clases que encontré en la documentación:
 4. fs-4: cambia el tamaño de la letra (fs-1 es el más grande y fs-6 el más pequeño). La usé en
    el texto "¿Listo para rodar?".
 5. fw-bold: pone el texto en negrita. La usé en títulos, datos destacados y el enlace.
+
+
+CONFLICTOS ENTRE MI CSS Y BOOTSTRAP
+
+1. .galeria y .row
+- Qué vi: las tarjetas de rutas se veían angostas, de un tercio del ancho.
+- Por qué: mi clase .galeria tenía display: grid y se cargaba después de Bootstrap,
+  así que le ganaba al display: flex de .row.
+- Cómo lo resolví: quité la clase galeria del HTML y dejé solo la grilla de Bootstrap.
+
+2. Color de los enlaces
+- Qué vi: el enlace "Encuéntranos" se veía azul de Bootstrap y no verde de mi marca.
+- Por qué: Bootstrap le pone color azul a todos los <a>.
+- Cómo lo resolví: agregué en styles.css la regla a { color: var(--verde-ruta); }.
+  Como styles.css se carga después de Bootstrap, gana.
+
+3. Altura de las fotos
+- Qué vi: las fotos de la flota y las rutas quedaron de alturas distintas.
+- Por qué: la clase img-fluid de Bootstrap pone height: auto y ya no tenía mi altura fija.
+- Cómo lo resolví: aún estoy mirando para que no quede mal
