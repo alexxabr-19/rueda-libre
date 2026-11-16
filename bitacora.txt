@@ -291,3 +291,28 @@ CONFLICTOS ENTRE MI CSS Y BOOTSTRAP
 - Qué vi: las fotos de la flota y las rutas quedaron de alturas distintas.
 - Por qué: la clase img-fluid de Bootstrap pone height: auto y ya no tenía mi altura fija.
 - Cómo lo resolví: aún estoy mirando para que no quede mal
+
+COMPARATIVA FINAL: CSS PROPIO vs BOOTSTRAP
+
+Líneas de styles.css:
+- v1.5 css-propio: 345 líneas.
+- v2.0-beta (con Bootstrap): 174 líneas.
+
+Tiempo invertido:
+- v1.5 (distribución con Flexbox y Grid propios): 3 horas más o menos.
+- v2.0-beta (migración a Bootstrap, incluyendo corregir conflictos):1 hora y 30 minutos más o menos.
+
+Ventajas observadas:
+- Las cuadrículas se hacen más rápido y más sencillo con Bootstrap que con Grid.
+- Menos css, hay muchas clases de Bootstrap que facilitan las cosas.
+
+Desventajas observadas:
+- Bootstrap cambia estilos base (títulos, tablas, márgenes) y hay que corregirlos.
+- Hay que aprender los nombres de las clases y revisar la documentación.
+- No hay muchos colores y/o estilos disponibles. El margin y padding llegan hasta un límite también en Bootstrap. Toca declarar eso en el css.
+
+Conclusión:
+Definitivamente, Bootstrap es una herramienta que proporciona una gran ayuda en el diseño de una página web. Reduciendo tiempo y ahorrando líneas de código
+al implementar sus clases. LLevar el css a Bootstrap sí me pareció algo tedioso. Sin embargo, empezar desde 0 con Bootstrap debe ser mucho más cómodo. Eso sí, Bootstrap tiene
+falencias como: no tener muchos colores disponibles o que hay que estar pegado a la documentación para tener en cuenta la infinidad de clases que hay. Pero a decir verdad, es una 
+excelente herramienta.

@@ -18,19 +18,24 @@
 </head>
 
 <body>
-    <header class="portada">
-        <h1>Rueda Libre</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="./index.html" class="activo">Inicio</a></li>
-                <li><a href="./paginas/tarifas.html">Tarifas y rutas</a></li>
-                <li><a href="./paginas/reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
+    <header class="container py-4">
+        <div class="row align-items-center g-3">
+            <div class="col-12 col-lg-5">
+                <h1>Rueda Libre</h1>
+            </div>
+            <nav class="col-12 col-lg-7">
+                <ul id="menu"
+                    class="d-flex flex-wrap justify-content-center justify-content-lg-end gap-3 list-unstyled mb-0">
+                    <li><a href="./index.html" class="activo">Inicio</a></li>
+                    <li><a href="./paginas/tarifas.html">Tarifas y rutas</a></li>
+                    <li><a href="./paginas/reservas.html">Reservas</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
-    <main>
+    <main class="container mt-4">
         <section class="row align-items-center g-4">
             <div class="col-12 col-md-6 portada-texto">
                 <h2>Explora Medellín sobre dos ruedas</h2>
@@ -87,7 +92,7 @@
                     <em>¡Ideal para recorrer a tu propio ritmo!</em>
                 </p>
                 <img src="./img/bici.png" alt="bicicletas" width="400" height="200">
-                <p><a class="boton-reserva" href="./paginas/reservas.html">Reservar ahora</a></p>
+                <p><a class="boton-reserva mt-4" href="./paginas/reservas.html">Reservar ahora</a></p>
             </article>
             <article>
                 <h3>Rutas guiadas por la ciudad.</h3>
@@ -99,7 +104,7 @@
             </article>
             <article>
                 <h3>Repuestos para tu bicicleta.</h3>
-                <h3>Venta de accesorios y repuestos para bicicletas.</h3>
+                <h4>Venta de accesorios y repuestos para bicicletas.</h4>
                 <p>¿Pinchaste una llanta o necesitas ajustar los frenos? Te ofrecemos asistencia rápida y un espacio
                     con herramientas básicas para que tu bicicleta <em>nunca te deje varado en el camino</em>.</p>
             </article>
@@ -110,7 +115,8 @@
             <div class="row g-3">
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="h-100 mb-0">
-                        <img class="img-fluid" src="./img/urbanaClasica.png" alt="Bicicleta urbana clásica"> <br><br><br><br><br>
+                        <img class="img-fluid" src="./img/urbanaClasica.png" alt="Bicicleta urbana clásica"
+                            style="height: 180px; width: 100%; object-fit: contain;">
                         <h3>Urbana Clásica</h3>
                         <p>Cómoda y liviana para las ciclo-rutas.</p>
                         <p>Desde $10.000 la hora</p>
@@ -119,7 +125,8 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="h-100 mb-0">
-                        <img class="img-fluid" src="./img/urbanaPlegable.png" alt="Bicicleta urbana plegable"> <br><br><br><br>
+                        <img class="img-fluid" src="./img/urbanaPlegable.png" alt="Bicicleta urbana plegable"
+                            style="height: 180px; width: 100%; object-fit: contain;">
                         <h3>Urbana Plegable</h3>
                         <p>Se dobla en segundos, ideal para combinar con el metro.</p>
                         <p>Desde $12.000 la hora</p>
@@ -128,7 +135,8 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="h-100 mb-0">
-                        <img class="img-fluid" src="./img/montaTrail.png" alt="Bicicleta Montaña Trail"><br><br>
+                        <img class="img-fluid" src="./img/montaTrail.png" alt="Bicicleta Montaña Trail"
+                            style="height: 180px; width: 100%; object-fit: contain;">
                         <h3>Montaña Trail</h3>
                         <p>Suspensión delantera y 21 cambios para las subidas.</p>
                         <p>Desde $15.000 la hora</p>
@@ -137,7 +145,8 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="h-100 mb-0">
-                        <img class="img-fluid" src="./img/gravelAventura.png" alt="Bicicleta Gravel Aventura"><br><br><br><br><br>
+                        <img class="img-fluid" src="./img/gravelAventura.png" alt="Bicicleta Gravel Aventura"
+                            style="height: 180px; width: 100%; object-fit: contain;">
                         <h3>Gravel Aventura</h3>
                         <p>Para rutas mixtas de asfalto y destapado.</p>
                         <p>Desde $18.000 la hora</p>
@@ -146,7 +155,8 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="h-100 mb-0">
-                        <img class="img-fluid" src="./img/electricaUrbana.png" alt="Bicicleta Eléctrica Urbana"><br><br><br><br><br>
+                        <img class="img-fluid" src="./img/electricaUrbana.png" alt="Bicicleta Eléctrica Urbana"
+                            style="height: 180px; width: 100%; object-fit: contain;">
                         <h3>Eléctrica Urbana</h3>
                         <p>Asistencia eléctrica con 45km de autonomía.</p>
                         <p>Desde $25.000 la hora</p>
@@ -155,7 +165,8 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="h-100 mb-0">
-                        <img class="img-fluid" src="./img/infantil.png" alt="Bicicleta Infantil"><br><br><br>
+                        <img class="img-fluid" src="./img/infantil.png" alt="Bicicleta Infantil"
+                            style="height: 180px; width: 100%; object-fit: contain;">
                         <h3>Infantil</h3>
                         <p>PAra niños de 6 a 10 años.</p>
                         <p>Desde $8.000 la hora</p>
@@ -164,7 +175,8 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="h-100 mb-0">
-                        <img class="img-fluid" src="./img/tandem.png" alt="Bicicleta tándem"><br><br><br><br><br><br>
+                        <img class="img-fluid" src="./img/tandem.png" alt="Bicicleta tándem"
+                            style="height: 180px; width: 100%; object-fit: contain;">
                         <h3>Tándem</h3>
                         <p>Para dos personas; perfecta para pasear en pareja.</p>
                         <p>Desde $20.000 la hora</p>
@@ -228,16 +240,18 @@
         </section>
     </main>
 
-    <footer>
-        <div>
+    <footer class="container row mx-auto py-4 g-3 text-center">
+        <div class="col-12 col-md-4">
             <p>Rueda Libre | 2026</p>
             <p>Alquiler de bicicletas en Medellín</p>
         </div>
-        <div>
+
+        <div class="col-12 col-md-4">
             <p>Teléfono: +57 4 1234567</p>
             <p>Email: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
         </div>
-        <div>
+
+        <div class="col-12 col-md-4">
             <p>Lunes a viernes: 9:00 a. m. a 6:00 p. m.</p>
             <p>Sábados: 9:00 a. m. a 1:00 p. m.</p>
             <p>Domingos y festivos: cerrado</p>

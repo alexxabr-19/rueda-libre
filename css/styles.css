@@ -1,9 +1,5 @@
-/* SEMANA 1 */
-
-
-/* Variables para aplicar estilos a mi sitio */
+/* VARIABLES */
 :root {
-    /* Colores */
     --verde-ruta: #1E7A4F;
     --naranja-pedal: #F39A2B;
     --azul-noche: #14213D;
@@ -11,25 +7,24 @@
     --gris-asfalto: #5B6470;
     --blanco: #FFFFFF;
 
-    /* Tipografías */
     --fuente-titulos: 'Montserrat', sans-serif;
     --fuente-textos: 'Open Sans', sans-serif;
 
-    /* Espaciados */
     --espaciado-pequeno: 0.5rem;
     --espaciado-mediano: 1rem;
     --espaciado-grande: 2rem;
+
+    scroll-behavior: auto;
 }
 
-* {
-    box-sizing: border-box;
-}
-
+/* TIPOGRAFÍA Y COLORES GENERALES */
 body {
     font-family: var(--fuente-textos);
     color: var(--gris-asfalto);
     background-color: var(--crema);
 }
+
+/* TÍTULOS */
 
 h1,
 h2,
@@ -41,15 +36,35 @@ h6 {
     color: var(--azul-noche);
 }
 
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+a {
+    color: var(--verde-ruta);
+}
+
+/* NAVEGACIÓN */
+#menu a {
+    color: var(--gris-asfalto);
+    text-decoration: none;
+}
+
 #menu a.activo {
     color: var(--verde-ruta);
     font-weight: 600;
     border-bottom: 3px solid var(--verde-ruta);
-}
-
-#menu a {
-    color: var(--gris-asfalto);
-    text-decoration: none;
 }
 
 #menu a:hover {
@@ -57,11 +72,12 @@ h6 {
     text-decoration: underline;
 }
 
-#menu a:focus {
+#menu a:focus-visible {
     outline: 3px solid var(--azul-noche);
     outline-offset: 3px;
 }
 
+/* BOTONES */
 .boton-reserva,
 button {
     display: inline-block;
@@ -69,6 +85,7 @@ button {
     color: var(--blanco);
     padding: var(--espaciado-pequeno) var(--espaciado-grande);
     text-decoration: none;
+    border: none;
     border-radius: 5px;
 }
 
@@ -77,16 +94,18 @@ button:hover {
     background-color: var(--azul-noche);
 }
 
-.boton-reserva:focus,
-button:focus {
+.boton-reserva:focus-visible,
+button:focus-visible {
     outline: 3px solid var(--azul-noche);
     outline-offset: 3px;
 }
 
+/* FORMULARIOS */
 input,
 select,
 textarea {
     border: 2px solid var(--gris-asfalto);
+    max-width: 100%;
 }
 
 input:hover,
@@ -95,23 +114,14 @@ textarea:hover {
     border-color: var(--verde-ruta);
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
     outline: 3px solid var(--azul-noche);
     outline-offset: 2px;
 }
 
-main {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: var(--espaciado-mediano);
-}
-
-.portada {
-    min-height: 10vh;
-}
-
+/* TARJETAS */
 article {
     padding: var(--espaciado-mediano);
     border: 1px solid var(--gris-asfalto);
@@ -119,55 +129,32 @@ article {
     margin-bottom: var(--espaciado-grande);
 }
 
-article img {
+/* TABLAS */
+.table {
     width: 100%;
-    height: auto;
-}
-
-table {
     border-collapse: collapse;
-    width: 100%;
+    color: var(--gris-asfalto);
+    border-color: var(--gris-asfalto);
 }
 
-th,
-td {
-    padding: 0.25rem;
-    font-size: 0.8rem;
+.table thead th {
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+    padding: var(--espaciado-pequeno);
+    font-size: 1rem;
     border: 1px solid var(--gris-asfalto);
 }
 
-th {
-    background-color: var(--azul-noche);
-    color: var(--blanco);
+.table tbody td {
+    background-color: var(--blanco);
+    color: var(--gris-asfalto);
+    padding: var(--espaciado-pequeno);
+    font-size: 1rem;
+    border: 1px solid var(--gris-asfalto);
 }
 
-fieldset {
-    margin-bottom: var(--espaciado-grande);
-    padding: var(--espaciado-mediano);
-}
 
-input,
-select,
-textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: var(--espaciado-mediano);
-}
-
-input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-    margin-bottom: 0;
-}
-
-/*header,
-main,
-footer {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: var(--espaciado-mediano);
-}*/
-
+/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: var(--espaciado-mediano);
@@ -188,115 +175,4 @@ footer {
     text-decoration: none;
     color: #0df053;
     background-color: #fff;
-}
-
-/* SEMANA 2 */
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--espaciado-mediano);
-    text-align: center;
-}
-
-#menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--espaciado-mediano);
-    list-style: none;
-    padding: 0;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: var(--espaciado-grande);
-    padding-bottom: 5rem;
-}
-
-/*Todavía lo usa reservas*/
-
-.reservas-layout {
-    display: grid;
-    gap: var(--espaciado-grande);
-}
-
-.fila {
-    display: flex;
-    flex-direction: column;
-    gap: var(--espaciado-mediano);
-
-}
-
-.campo {
-    width: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    color: var(--verde-ruta);
-}
-
-/*  TABLET: desde 768px */
-@media (min-width: 768px) {
-
-    #menu {
-        flex-wrap: nowrap;
-    }
-
-    header {
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .fila {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .campo {
-        width: 48%;
-    }
-
-    th,
-    td {
-        padding: var(--espaciado-pequeno);
-        font-size: 1rem;
-    }
-
-    .reservas-layout aside ul {
-        display: flex;
-        justify-content: space-between;
-        gap: var(--espaciado-mediano);
-        list-style: none;
-        padding: 0;
-    }
-}
-
-/* ESCRITORIO: desde 1200px */
-@media (min-width: 1200px) {
-    .reservas-layout {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .reservas-layout aside ul {
-        flex-direction: column;
-    }
 }
