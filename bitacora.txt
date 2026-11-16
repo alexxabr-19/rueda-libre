@@ -366,3 +366,7 @@ Fue interesante conocer otra forma de diseñar páginas web. :D
 Instalé Tailwind con npm y configuré la CLI para generar `output.css`. Creé tres botones con efectos "hover" y "focus".
 Al revisar el CSS, encontré "bg-orange-400", pero no "bg-pink-500", porque Tailwind solo genera las clases que utilizamos.
 También comprobé que los botones funcionan con el mouse y el teclado. :D
+
+Creé una página con botones, tarjeta, alertas y campos de formulario utilizando Tailwind.
+Mantuve las mismas reglas de diseño: bordes rounded-lg, espacios p-3 y p-4, colores naranja, verde y azul, y sombras shadow-md.
+También agregué efectos hover y focus para mejorar la interacción con el mouse y el teclado.
