@@ -370,3 +370,8 @@ También comprobé que los botones funcionan con el mouse y el teclado. :D
 Creé una página con botones, tarjeta, alertas y campos de formulario utilizando Tailwind.
 Mantuve las mismas reglas de diseño: bordes rounded-lg, espacios p-3 y p-4, colores naranja, verde y azul, y sombras shadow-md.
 También agregué efectos hover y focus para mejorar la interacción con el mouse y el teclado.
+
+
+Organicé la landing de Rueda Nocturna con encabezado, sección principal, rutas, pasos, inscripción y pie de página.
+Utilicé 'flex' para el encabezado y el pie de página porque permite organizar elementos en una fila. Usé 'grid' para las rutas y los pasos porque facilita distribuirlos en columnas.
+También reutilicé los botones y tarjetas de los ejercicios anteriores.
