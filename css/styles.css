@@ -14,6 +14,16 @@
     --espaciado-mediano: 1rem;
     --espaciado-grande: 2rem;
 
+    --bs-primary: var(--verde-ruta);
+    --bs-primary-rgb: 30, 122, 79;
+
+    --bs-body-font-family: var(--fuente-textos);
+
+    --bs-link-color: var(--verde-ruta);
+    --bs-link-color-rgb: 30, 122, 79;
+
+    --bs-border-radius: 0.5rem;
+
     scroll-behavior: auto;
 }
 
@@ -196,3 +206,104 @@ section {
     margin-top: var(--espaciado-grande);
     margin-bottom: var(--espaciado-grande);
 }
+
+
+/* BOTÓN PRINCIPAL - VERDE RUTA */
+.btn-primary {
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: var(--verde-ruta);
+    --bs-btn-border-color: var(--verde-ruta);
+
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-hover-bg: #17613F;
+    --bs-btn-hover-border-color: #17613F;
+
+    --bs-btn-active-color: #FFFFFF;
+    --bs-btn-active-bg: #124D32;
+    --bs-btn-active-border-color: #124D32;
+
+    --bs-btn-disabled-color: #FFFFFF;
+    --bs-btn-disabled-bg: var(--verde-ruta);
+    --bs-btn-disabled-border-color: var(--verde-ruta);
+}
+
+
+
+/* BOTÓN PERSONALIZADO - NARANJA PEDAL */
+.btn-naranja-pedal {
+    --bs-btn-color: var(--azul-noche);
+    --bs-btn-bg: var(--naranja-pedal);
+    --bs-btn-border-color: var(--naranja-pedal);
+
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-hover-bg: #8A4700;
+    --bs-btn-hover-border-color: #8A4700;
+
+    --bs-btn-active-color: #FFFFFF;
+    --bs-btn-active-bg: #713A00;
+    --bs-btn-active-border-color: #713A00;
+
+    --bs-btn-disabled-color: var(--azul-noche);
+    --bs-btn-disabled-bg: var(--naranja-pedal);
+    --bs-btn-disabled-border-color: var(--naranja-pedal);
+}
+
+
+
+/* UTILIDADES PRIMARIAS DE BOOTSTRAP 5.3 */
+:root {
+    --bs-primary-rgb: 30, 122, 79;
+}
+
+body .text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity));
+}
+
+body .bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
+}
+
+
+/* PORTADA PRINCIPAL */
+.portada-rueda {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    padding: 3rem 2rem;
+    border-radius: var(--bs-border-radius);
+}
+
+.portada-rueda h2,
+.portada-rueda h3 {
+    color: var(--blanco);
+}
+
+/* TÍTULOS */
+.titulo-seccion {
+    color: var(--azul-noche);
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    border-left: 5px solid var(--naranja-pedal);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* PIE DE PÁGINA */
+.pie-rueda {
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+    padding: 2rem;
+    border-radius: var(--bs-border-radius);
+}
+
+.pie-rueda a {
+    color: var(--blanco);
+    text-decoration: underline;
+}
+
+.pie-rueda a:hover {
+    color: var(--naranja-pedal);
+}
+
