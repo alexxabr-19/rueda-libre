@@ -359,7 +359,6 @@ En Bootstrap hice el botón con `btn btn-primary`, mientras que en Tailwind util
 La diferencia es que Bootstrap tiene componentes prediseñados y Tailwind permite crear los estilos combinando clases pequeñas.
 Fue interesante conocer otra forma de diseñar páginas web. :D
 
-
 Instalé Tailwind con npm y configuré la CLI para generar `output.css`. Creé tres botones con efectos "hover" y "focus".
 Al revisar el CSS, encontré "bg-orange-400", pero no "bg-pink-500", porque Tailwind solo genera las clases que utilizamos.
 También comprobé que los botones funcionan con el mouse y el teclado. :D
@@ -368,15 +367,12 @@ Creé una página con botones, tarjeta, alertas y campos de formulario utilizand
 Mantuve las mismas reglas de diseño: bordes rounded-lg, espacios p-3 y p-4, colores naranja, verde y azul, y sombras shadow-md.
 También agregué efectos hover y focus para mejorar la interacción con el mouse y el teclado.
 
-
 Organicé la landing de Rueda Nocturna con encabezado, sección principal, rutas, pasos, inscripción y pie de página.
 Utilicé 'flex' para el encabezado y el pie de página porque permite organizar elementos en una fila. Usé 'grid' para las rutas y los pasos porque facilita distribuirlos en columnas.
 También reutilicé los botones y tarjetas de los ejercicios anteriores.
 
-
 Al revisar la landing a 360 px, encontré que las rutas y los pasos tenían demasiadas columnas para un celular.
 Utilicé 'sm:', 'md:' y 'lg:' para adaptar el diseño a diferentes pantallas. También ajusté el encabezado, los tamaños de texto y los espacios.
-
 | Pantalla | Resultado esperado |
 | 360 px | Una columna y menú simplificado |
 | 768 px | Dos columnas y encabezado horizontal |
@@ -394,7 +390,6 @@ Al revisar el archivo 'nocturna/index.html', identifiqué los siguientes element
 
 Los botones utilizan varias clases iguales de Tailwind. Para reducir la repetición del código, se creará una clase reutilizable mediante '@apply'.
 Las tarjetas conservarán sus clases de Tailwind para mantener su diseño y facilitar la personalización.
-
 
 
 Clases repetidas
@@ -417,3 +412,11 @@ El archivo de Tailwind lo medí después de minificarlo. Los de Bootstrap los re
 
 ¿Cuál recomiendo?
 Yo recomiendo **Tailwind CSS para Rueda Libre**, porque me permitió personalizar mejor la página, hacerla responsive y agregar el modo oscuro. Aunque al principio me costó un poco más aprenderlo, me parece una buena opción para continuar el proyecto.
+
+
+Creé un formulario para Rueda Nocturna donde las personas pueden ingresar sus datos, elegir una ruta y aceptar las condiciones.
+Agregué validaciones para evitar datos incorrectos y adapté el formulario para celular y computador, incluyendo el modo oscuro.
+
+Tiempo utilizado: 37 minutos.
+Pruebas realizadas: formulario vacío, datos incorrectos, datos completos y navegación con teclado.
+Pendientes: Ninguno.

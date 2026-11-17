@@ -23,8 +23,7 @@
                 <a href="#rutas" class="hidden md:inline">Rutas</a>
                 <a href="#funciona" class="hidden md:inline">¿Cómo funciona?</a>
 
-                <a href="#inscripcion"
-                    class="btn-principal text-sm md:text-base">
+                <a href="#inscripcion" class="btn-principal text-sm md:text-base">
                     Inscríbete
                 </a>
             </nav>
@@ -52,8 +51,7 @@
                     3 rutas · Desde $55.000
                 </p>
 
-                <a href="#inscripcion"
-                    class="btn-principal">
+                <a href="#inscripcion" class="btn-principal">
                     Inscríbete
                 </a>
 
@@ -101,8 +99,7 @@
                             $55.000
                         </p>
 
-                        <a href="../paginas/reservas.html"
-                            class="btn-principal">
+                        <a href="../paginas/reservas.html" class="btn-principal">
                             Inscríbete
                         </a>
                     </div>
@@ -140,8 +137,7 @@
                             $75.000
                         </p>
 
-                        <a href="../paginas/reservas.html"
-                            class="btn-principal">
+                        <a href="../paginas/reservas.html" class="btn-principal">
                             Inscríbete
                         </a>
                     </div>
@@ -179,8 +175,7 @@
                             $95.000
                         </p>
 
-                        <a href="../paginas/reservas.html"
-                            class="btn-principal">
+                        <a href="../paginas/reservas.html" class="btn-principal">
                             Inscríbete
                         </a>
                     </div>
@@ -227,20 +222,170 @@
         </section>
 
         <section id="inscripcion" class="py-8 md:py-12 bg-crema text-azul-noche dark:bg-azul-noche dark:text-white">
+
             <div class="max-w-6xl mx-auto px-4">
 
                 <h2 class="text-3xl font-bold font-titulos mb-4">
-                    ¡Inscríbete a Rueda Nocturna!
+                    Inscríbete a Rueda Nocturna
                 </h2>
 
-                <p class="mb-4">
-                    Elige tu ruta y vive una experiencia diferente.
+                <p class="mb-6">
+                    Completa tus datos para inscribirte en una de nuestras rutas.
                 </p>
 
-                <a href="../paginas/reservas.html"
-                    class="btn-principal">
-                    Inscríbete
-                </a>
+                <form action="#" method="get" class="space-y-6">
+
+                    <!-- DATOS PERSONALES -->
+                    <fieldset class="border border-verde-ruta dark:border-amarillo-farol rounded-lg p-4">
+
+                        <legend class="font-bold font-titulos px-2">
+                            Datos personales
+                        </legend>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                            <div>
+                                <label for="nombre" class="block font-bold mb-2">
+                                    Nombre completo
+                                </label>
+
+                                <input type="text" id="nombre" name="nombre" minlength="3" required autocomplete="name"
+                                    placeholder="Tu nombre completo"
+                                    class="w-full bg-crema text-azul-noche dark:bg-azul-noche dark:text-white border border-verde-ruta dark:border-amarillo-farol rounded-lg p-3 focus:outline-none focus:ring-4 focus:ring-amarillo-farol">
+                            </div>
+
+                            <div>
+                                <label for="correo" class="block font-bold mb-2">
+                                    Correo electrónico
+                                </label>
+
+                                <input type="email" id="correo" name="correo" required autocomplete="email"
+                                    placeholder="ejemplo@correo.com"
+                                    class="w-full bg-crema text-azul-noche dark:bg-azul-noche dark:text-white border border-verde-ruta dark:border-amarillo-farol rounded-lg p-3 focus:outline-none focus:ring-4 focus:ring-amarillo-farol">
+                            </div>
+
+                            <div>
+                                <label for="celular" class="block font-bold mb-2">
+                                    Celular
+                                </label>
+
+                                <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}"
+                                    title="El celular debe tener 10 números y comenzar por 3" maxlength="10" required
+                                    autocomplete="tel" placeholder="3001234567"
+                                    class="w-full bg-crema text-azul-noche dark:bg-azul-noche dark:text-white border border-verde-ruta dark:border-amarillo-farol rounded-lg p-3 focus:outline-none focus:ring-4 focus:ring-amarillo-farol">
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="border border-verde-ruta dark:border-amarillo-farol rounded-lg p-4">
+
+                        <legend class="font-bold font-titulos px-2">
+                            Datos de la ruta
+                        </legend>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                            <div>
+                                <label for="ruta" class="block font-bold mb-2">
+                                    Selecciona tu ruta
+                                </label>
+
+                                <select id="ruta" name="ruta" required
+                                    class="w-full bg-crema text-azul-noche dark:bg-azul-noche dark:text-white border border-verde-ruta dark:border-amarillo-farol rounded-lg p-3 focus:outline-none focus:ring-4 focus:ring-amarillo-farol">
+
+                                    <option value="">Selecciona una ruta</option>
+                                    <option value="centro">Luces del Centro</option>
+                                    <option value="miradores">Miradores de la Ciudad</option>
+                                    <option value="palmas">Luna en Las Palmas</option>
+
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="dia" class="block font-bold mb-2">
+                                    Día de salida
+                                </label>
+
+                                <select id="dia" name="dia" required
+                                    class="w-full bg-crema text-azul-noche dark:bg-azul-noche dark:text-white border border-verde-ruta dark:border-amarillo-farol rounded-lg p-3 focus:outline-none focus:ring-4 focus:ring-amarillo-farol">
+
+                                    <option value="">Selecciona un día</option>
+                                    <option value="jueves">Jueves</option>
+                                    <option value="viernes">Viernes</option>
+                                    <option value="sabado">Sábado</option>
+
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="acompanantes" class="block font-bold mb-2">
+                                    Número de acompañantes
+                                </label>
+
+                                <input type="number" id="acompanantes" name="acompanantes" min="0" max="3" step="1"
+                                    value="0" required
+                                    class="w-full bg-crema text-azul-noche dark:bg-azul-noche dark:text-white border border-verde-ruta dark:border-amarillo-farol rounded-lg p-3 focus:outline-none focus:ring-4 focus:ring-amarillo-farol">
+                            </div>
+
+                            <div>
+                                <label for="experiencia" class="block font-bold mb-2">
+                                    Nivel de experiencia
+                                </label>
+
+                                <select id="experiencia" name="experiencia" required
+                                    class="w-full bg-crema text-azul-noche dark:bg-azul-noche dark:text-white border border-verde-ruta dark:border-amarillo-farol rounded-lg p-3 focus:outline-none focus:ring-4 focus:ring-amarillo-farol">
+
+                                    <option value="">Selecciona tu nivel</option>
+                                    <option value="principiante">Principiante</option>
+                                    <option value="intermedio">Intermedio</option>
+                                    <option value="avanzado">Avanzado</option>
+
+                                </select>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="border border-verde-ruta dark:border-amarillo-farol rounded-lg p-4">
+
+                        <legend class="font-bold font-titulos px-2">
+                            Confirmación
+                        </legend>
+
+                        <p class="font-bold mb-3">
+                            ¿Tienes bicicleta propia?
+                        </p>
+
+                        <div class="flex gap-6 mb-4">
+
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="bicicleta" value="si" required>
+                                Sí
+                            </label>
+
+                            <label class="flex items-center gap-2">
+                                <input type="radio" name="bicicleta" value="no" required>
+                                No
+                            </label>
+
+                        </div>
+
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" name="condiciones" required class="mt-1 accent-verde-ruta">
+
+                            <span>
+                                Acepto las condiciones de participación.
+                            </span>
+                        </label>
+
+                    </fieldset>
+
+                    <button type="submit" class="btn-principal">
+                        Enviar inscripción
+                    </button>
+
+                </form>
 
             </div>
         </section>
