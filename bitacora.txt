@@ -352,15 +352,12 @@ la adaptación a celulares, pero poco a poco fui entendiendo cómo funcionan. Fu
 un diseño básico a una versión más completa y personalizada. :D
 
 
-SEMANA 3 - DÍA 1
-
-Tailwind
+SEMANA 3 - Tailwind
 
 Creé el prototipo de Rueda Nocturna utilizando Tailwind CSS, agregando colores, tamaños y espaciados.
 En Bootstrap hice el botón con `btn btn-primary`, mientras que en Tailwind utilicé clases como `bg-orange-400`, `text-black` y `p-3`.
 La diferencia es que Bootstrap tiene componentes prediseñados y Tailwind permite crear los estilos combinando clases pequeñas.
 Fue interesante conocer otra forma de diseñar páginas web. :D
-
 
 
 Instalé Tailwind con npm y configuré la CLI para generar `output.css`. Creé tres botones con efectos "hover" y "focus".
@@ -386,3 +383,37 @@ Utilicé 'sm:', 'md:' y 'lg:' para adaptar el diseño a diferentes pantallas. Ta
 | 1024 px | Tres rutas y cuatro pasos por fila |
 | 1280 px | Diseño completo de escritorio |
 
+
+
+Al revisar el archivo 'nocturna/index.html', identifiqué los siguientes elementos repetidos:
+
+- 6 botones principales «Inscríbete».
+- 3 tarjetas de rutas.
+- 4 tarjetas de pasos de «¿Cómo funciona?».
+- 3 etiquetas de dificultad.
+
+Los botones utilizan varias clases iguales de Tailwind. Para reducir la repetición del código, se creará una clase reutilizable mediante '@apply'.
+Las tarjetas conservarán sus clases de Tailwind para mantener su diseño y facilitar la personalización.
+
+
+
+Clases repetidas
+
+Revisé mi página y encontré 6 botones con las mismas clases, 3 tarjetas de rutas y 4 tarjetas de pasos.
+Para no repetir tantas clases en los botones, utilicé `@apply` y creé una clase llamada `.btn-principal`.
+
+
+| Archivo | Tamaño |
+| Tailwind CSS | 14,56 KB |
+| Bootstrap CSS | 33,7 KB |
+| Bootstrap JavaScript | 21,9 KB |
+
+El archivo de Tailwind lo medí después de minificarlo. Los de Bootstrap los revisé en Network de Chrome, así que pueden tener compresión.
+
+- **Aprendizaje:** Bootstrap me pareció más fácil al principio. Tailwind tiene más clases que aprender.
+- **Personalización:** Me gustó más Tailwind porque pude cambiar los colores, las fuentes y agregar el modo oscuro.
+- **Tamaño:** Mi archivo de Tailwind pesa 14,56 KB. Los archivos de Bootstrap suman 55,6 KB, aunque las mediciones no se hicieron de la misma forma.
+- **Uso:** Bootstrap sirve para crear páginas rápidamente y Tailwind para hacer diseños más personalizados.
+
+¿Cuál recomiendo?
+Yo recomiendo **Tailwind CSS para Rueda Libre**, porque me permitió personalizar mejor la página, hacerla responsive y agregar el modo oscuro. Aunque al principio me costó un poco más aprenderlo, me parece una buena opción para continuar el proyecto.
