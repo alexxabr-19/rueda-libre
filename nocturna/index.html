@@ -14,9 +14,10 @@
         class="bg-crema text-azul-noche dark:bg-azul-noche dark:text-white p-4 border-b border-verde-ruta dark:border-amarillo-farol">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
 
-            <h2 class="text-xl font-bold font-titulos">
-                Rueda Libre
-            </h2>
+            <a href="../index.html"
+                class="text-xl font-bold font-titulos hover:underline focus:ring-4 focus:ring-amarillo-farol rounded">
+                🚲 Rueda Libre
+            </a>
 
             <nav class="flex gap-4 items-center">
                 <a href="#inicio" class="hidden md:inline">Inicio</a>
@@ -25,6 +26,10 @@
 
                 <a href="#inscripcion" class="btn-principal text-sm md:text-base">
                     Inscríbete
+                </a>
+                <a href="../paginas/reservas.html"
+                    class="inline-block rounded-lg p-3 font-bold bg-verde-ruta text-white hover:bg-naranja-pedal hover:text-azul-noche focus:ring-4 focus:ring-amarillo-farol text-sm md:text-base">
+                    Reserva tu bici
                 </a>
             </nav>
         </div>
@@ -392,29 +397,48 @@
 
     </main>
 
-    <footer
-        class="bg-crema text-azul-noche dark:bg-azul-noche dark:text-white py-8 border-t border-verde-ruta dark:border-amarillo-farol">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between gap-6">
 
-            <div>
-                <h3 class="font-bold font-titulos">Rueda Libre</h3>
-                <p>Medellín, Colombia</p>
-            </div>
+<footer class="bg-crema text-azul-noche dark:bg-azul-noche dark:text-white py-8 border-t border-verde-ruta dark:border-amarillo-farol">
 
-            <div>
-                <h3 class="font-bold font-titulos">Enlaces</h3>
-                <a href="#inicio" class="block">Inicio</a>
-                <a href="#rutas" class="block">Rutas</a>
-            </div>
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <div>
-                <h3 class="font-bold font-titulos">Campaña</h3>
-                <p>Rueda Nocturna</p>
-                <p>Jueves a sábado</p>
-            </div>
-
+        <div>
+            <h3 class="font-bold font-titulos mb-2">
+                Rueda Libre | 2026
+            </h3>
+            <p>Alquiler de bicicletas en Medellín</p>
+            <p>Medellín, Colombia</p>
         </div>
-    </footer>
+
+        <div>
+            <h3 class="font-bold font-titulos mb-2">
+                Contacto
+            </h3>
+
+            <p>Teléfono: +57 4 1234567</p>
+
+            <p>
+                Email:
+                <a href="mailto:hola@ruedalibre.example"
+                   class="underline hover:text-verde-ruta dark:hover:text-amarillo-farol focus:ring-2 focus:ring-amarillo-farol">
+                    hola@ruedalibre.example
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <h3 class="font-bold font-titulos mb-2">
+                Horarios de atención
+            </h3>
+
+            <p>Lunes a viernes: 9:00 a. m. a 6:00 p. m.</p>
+            <p>Sábados: 9:00 a. m. a 1:00 p. m.</p>
+            <p>Domingos y festivos: cerrado</p>
+        </div>
+
+    </div>
+
+</footer>
 
 </body>
 

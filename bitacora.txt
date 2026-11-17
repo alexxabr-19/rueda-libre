@@ -420,3 +420,11 @@ Agregué validaciones para evitar datos incorrectos y adapté el formulario para
 Tiempo utilizado: 37 minutos.
 Pruebas realizadas: formulario vacío, datos incorrectos, datos completos y navegación con teclado.
 Pendientes: Ninguno.
+
+
+Agregué Rueda Nocturna al menú de las tres páginas del sitio principal y también añadí una cuarta diapositiva al carrusel.
+En la landing hice que el logo llevara al inicio de Rueda Libre y agregué un botón para reservar bicicletas.
+También revisé los colores, las fuentes y los datos de contacto para que ambos sitios mantuvieran el mismo diseño.
+Pruebas: revisé los enlaces entre las páginas y el funcionamiento del carrusel.
+Tiempo utilizado: 35 minutos.
+Pendientes: comprobar los enlaces en GitHub Pages después de publicar los cambios.

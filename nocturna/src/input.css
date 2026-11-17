@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
 
 @import "tailwindcss";
@@ -9,6 +8,8 @@
     --color-azul-noche: #14213D;
     --color-crema: #FAF6EF;
     --color-amarillo-farol: #FFD166;
+    --color-gris-asfalto: #5B6470;
+    --color-blanco: #FFFFFF;
 
     --font-titulos: "Montserrat", sans-serif;
     --font-textos: "Open Sans", sans-serif;
@@ -20,4 +21,3 @@
         @apply inline-block rounded-lg p-3 font-bold text-azul-noche bg-naranja-pedal shadow-md hover:bg-amarillo-farol focus:ring-4 focus:ring-amarillo-farol;
     }
 }
-
