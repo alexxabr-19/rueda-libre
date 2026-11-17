@@ -428,3 +428,12 @@ También revisé los colores, las fuentes y los datos de contacto para que ambos
 Pruebas: revisé los enlaces entre las páginas y el funcionamiento del carrusel.
 Tiempo utilizado: 35 minutos.
 Pendientes: comprobar los enlaces en GitHub Pages después de publicar los cambios.
+
+
+
+Agregué tres planes a la landing: Individual, Pareja y Grupo.
+Utilicé Grid para organizar las tarjetas y Flexbox para mantener los botones alineados al final. También destaqué el plan Pareja con un borde más grueso, un fondo diferente y la etiqueta «Más elegido».
+Revisé el diseño en celular y computador, el box model y el modo oscuro.
+
+Tiempo utilizado: 38 minutos.
+Pendientes: Ninguno.
